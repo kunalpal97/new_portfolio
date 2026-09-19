@@ -39,7 +39,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-[var(--background)]">
+    <footer className="border-t border-white/10 bg-(--background)]">
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 px-6 py-7 sm:flex-row">
         <p className="text-sm text-white/50">
           © {currentYear}{" "}
@@ -54,7 +54,7 @@ export default function Footer() {
               target={external ? "_blank" : undefined}
               rel={external ? "noopener noreferrer" : undefined}
               aria-label={label}
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/50 transition-all duration-200 hover:border-[var(--accent)]/40 hover:bg-[var(--accent)]/5 hover:text-[var(--accent)]"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/3 text-white/50 transition-all duration-200 hover:border-(--accent)/40 hover:bg-(--accent)/5 hover:text-(--accent)"
             >
               <Icon size={16} />
             </a>
@@ -63,7 +63,7 @@ export default function Footer() {
           <a
             href="#home"
             aria-label="Back to top"
-            className="ml-1 flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-white/50 transition-all duration-200 hover:border-[var(--accent)]/40 hover:bg-[var(--accent)]/5 hover:text-[var(--accent)]"
+            className="ml-1 flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/3 text-white/50 transition-all duration-200 hover:border-(--accent)]/40 hover:bg-(--accent)]/5 hover:text-(--accent)]"
           >
             <ArrowUp size={15} />
           </a>

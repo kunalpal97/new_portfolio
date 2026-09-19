@@ -74,7 +74,7 @@ function TechCard({ name, icon: Icon, color }: { name: string; icon: React.Eleme
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="flex items-center gap-2 px-3 py-2 rounded-lg border border-white/10 bg-white/[0.03] hover:bg-white/[0.06] whitespace-nowrap shrink-0 transition-all duration-200"
+      className="flex items-center gap-2 px-3 py-2 rounded-lg border border-white/10 bg-white/3 hover:bg-white/6 whitespace-nowrap shrink-0 transition-all duration-200"
       style={{ borderColor: hovered ? color : undefined }}
     >
       <Icon size={14} style={{ color: hovered ? color : "rgba(255,255,255,0.5)" }} className="transition-colors duration-200" />

@@ -21,7 +21,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-24 px-6">
       <div className="max-w-5xl mx-auto">
-        <p className="text-sm text-[var(--accent)] font-medium mb-2">Projects</p>
+        <p className="text-sm text-(--accent) font-medium mb-2">Projects</p>
         <h2 className="text-3xl sm:text-4xl font-bold mb-12">Things I&apos;ve Built</h2>
 
         <div className="mb-6 flex items-center gap-2">
@@ -29,17 +29,17 @@ export default function Projects() {
           <p className="text-xs text-white/40 uppercase tracking-wider">Featured Project</p>
         </div>
 
-        <div className="group relative rounded-2xl border border-white/10 bg-white/5 overflow-hidden mb-8 hover:border-[var(--accent)]/40 transition-colors">
+        <div className="group relative rounded-2xl border border-white/10 bg-white/5 overflow-hidden mb-8 hover:border-(--accent)/40 transition-colors">
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="relative w-full aspect-video md:aspect-auto overflow-hidden">
               {featuredProject.image ? (
                 <Image src={featuredProject.image} alt={`${featuredProject.title} screenshot`} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
               ) : (
-                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-white/5 to-white/10">
+                <div className="w-full h-full flex items-center justify-center bg-linear-to-br from-white/5 to-white/10">
                   <Code2 size={40} className="text-white/20" />
                 </div>
               )}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 md:bg-gradient-to-r md:from-transparent md:to-black/20" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/40 md:bg-linear-to-r md:from-transparent md:to-black/20" />
             </div>
 
             <div className="p-8 flex flex-col justify-center">
@@ -53,7 +53,7 @@ export default function Projects() {
               </div>
 
               <div className="flex items-center gap-5">
-                <a href={featuredProject.live} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-sm font-medium text-[var(--accent)] hover:opacity-80 transition-opacity">
+                <a href={featuredProject.live} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-sm font-medium text-(--accent)] hover:opacity-80 transition-opacity">
                   <ExternalLink size={16} />
                   Live Demo
                 </a>
@@ -70,12 +70,12 @@ export default function Projects() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
           {otherProjects.map((project, index) => (
-            <div key={project.title} className="group relative rounded-2xl border border-white/10 bg-white/5 overflow-hidden hover:border-[var(--accent)]/40 hover:-translate-y-1 transition-all duration-300">
+            <div key={project.title} className="group relative rounded-2xl border border-white/10 bg-white/5 overflow-hidden hover:border-(--accent)/40 hover:-translate-y-1 transition-all duration-300">
               <div className="relative w-full aspect-video overflow-hidden">
                 {project.image ? (
                   <Image src={project.image} alt={`${project.title} screenshot`} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
                 ) : (
-                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-white/5 to-white/10">
+                  <div className="w-full h-full flex items-center justify-center bg-linear-to-br from-white/5 to-white/10">
                     <Code2 size={28} className="text-white/20" />
                   </div>
                 )}
@@ -93,7 +93,7 @@ export default function Projects() {
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <a href={project.live} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-xs font-medium text-[var(--accent)] hover:opacity-80 transition-opacity">
+                  <a href={project.live} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-xs font-medium text-(--accent)] hover:opacity-80 transition-opacity">
                     <ExternalLink size={13} />
                     Live
                   </a>

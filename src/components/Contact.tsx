@@ -41,7 +41,7 @@ export default function Contact() {
         transition={{ duration: 0.6 }}
         className="max-w-2xl mx-auto text-center"
       >
-        <p className="text-sm text-[var(--accent)] font-medium mb-2">Contact</p>
+        <p className="text-sm text-(--accent)] font-medium mb-2">Contact</p>
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">Let&apos;s Connect</h2>
         <p className="text-white/60 mb-12">
           I&apos;m open to new opportunities and interesting conversations. Drop a message and I&apos;ll get back to you.
@@ -63,7 +63,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Your name"
-                  className="w-full pl-11 pr-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:border-[var(--accent)] transition-colors"
+                  className="w-full pl-11 pr-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:border-(--accent)] transition-colors"
                 />
               </div>
             </div>
@@ -81,7 +81,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="you@example.com"
-                  className="w-full pl-11 pr-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:border-[var(--accent)] transition-colors"
+                  className="w-full pl-11 pr-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:border-(--accent)] transition-colors"
                 />
               </div>
             </div>
@@ -101,7 +101,7 @@ export default function Contact() {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="What would you like to say?"
-                className="w-full pl-11 pr-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:border-[var(--accent)] transition-colors resize-none"
+                className="w-full pl-11 pr-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:border-(--accent)] transition-colors resize-none"
               />
             </div>
           </div>
@@ -109,7 +109,7 @@ export default function Contact() {
           <button
             type="submit"
             disabled={status === "loading"}
-            className="w-full sm:w-auto px-6 py-3 rounded-full bg-[var(--accent)] text-black font-medium hover:opacity-90 transition-opacity disabled:opacity-50 flex items-center justify-center gap-2"
+            className="w-full sm:w-auto px-6 py-3 rounded-full bg-(--accent)] text-black font-medium hover:opacity-90 transition-opacity disabled:opacity-50 flex items-center justify-center gap-2"
           >
             {status === "loading" ? (
               <>

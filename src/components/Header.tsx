@@ -19,7 +19,7 @@ export default function Header() {
 
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[var(--background)]/80 backdrop-blur-md border-b border-white/10">
+    <header className="fixed top-0 left-0 w-full z-50 bg-(--background)]/80 backdrop-blur-md border-b border-white/10">
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="#" className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-lg overflow-hidden">
@@ -52,7 +52,7 @@ export default function Header() {
           href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:inline-block text-sm font-medium px-4 py-2 rounded-full bg-[var(--accent)] text-black hover:opacity-90 transition-opacity"
+          className="hidden md:inline-block text-sm font-medium px-4 py-2 rounded-full bg-(--accent)] text-black hover:opacity-90 transition-opacity"
         >
           Resume
         </a>
@@ -82,7 +82,7 @@ export default function Header() {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium px-4 py-2 rounded-full bg-[var(--accent)] text-black text-center"
+            className="text-sm font-medium px-4 py-2 rounded-full bg-(--accent)] text-black text-center"
           >
             Resume
           </a>

@@ -12,7 +12,7 @@ export default function About() {
         transition={{ duration: 0.6 }}
         className="max-w-5xl mx-auto"
       >
-        <p className="text-sm text-[var(--accent)] font-medium mb-2">About Me</p>
+        <p className="text-sm text-(--accent) font-medium mb-2">About Me</p>
         <h2 className="text-3xl sm:text-4xl font-bold mb-12">Who I Am</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
@@ -25,22 +25,22 @@ export default function About() {
             </p>
             <div className="flex items-center gap-6 pt-2">
               <div>
-                <p className="text-2xl font-bold text-[var(--accent)]">3+</p>
+                <p className="text-2xl font-bold text-(--accent)">3+</p>
                 <p className="text-xs text-white/50">Internships</p>
               </div>
               <div>
-                <p className="text-2xl font-bold text-[var(--accent)]">B.E. IT</p>
+                <p className="text-2xl font-bold text-(--accent)]">B.E. IT</p>
                 <p className="text-xs text-white/50">Graduate</p>
               </div>
               <div>
-                <p className="text-2xl font-bold text-[var(--accent)]">India</p>
+                <p className="text-2xl font-bold text-(--accent)]">India</p>
                 <p className="text-xs text-white/50">Remote-ready</p>
               </div>
             </div>
           </div>
 
           <div className="lg:col-span-3 rounded-xl border border-white/10 bg-[#0d0d0d] overflow-hidden">
-            <div className="flex items-center gap-2 px-4 py-3 border-b border-white/10 bg-white/[0.02]">
+            <div className="flex items-center gap-2 px-4 py-3 border-b border-white/10 bg-white/2">
               <span className="w-3 h-3 rounded-full bg-red-500/70" />
               <span className="w-3 h-3 rounded-full bg-yellow-500/70" />
               <span className="w-3 h-3 rounded-full bg-green-500/70" />
@@ -87,17 +87,17 @@ export default function About() {
 
         <div className="mt-14">
           <div className="flex items-center gap-3 mb-5">
-            <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-(--accent)]" />
             <p className="text-sm text-white/60 font-medium uppercase tracking-wider">
               A Year of Building
             </p>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6 overflow-x-auto">
+          <div className="rounded-2xl border border-white/10 bg-white/3 p-5 sm:p-6 overflow-x-auto">
             <img
               src="https://contribkit.app/user/kunalpal97.svg?palette=tokyonight&background=transparent&shape=rounded"
               alt="Kunal's GitHub contribution graph"
-              className="w-full min-w-[600px]"
+              className="w-full min-w-150"
             />
           </div>
         </div>

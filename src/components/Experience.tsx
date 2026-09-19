@@ -49,7 +49,7 @@ export default function Experience() {
   return (
     <section id="experience" className="py-24 px-6">
       <div className="max-w-4xl mx-auto">
-        <p className="text-sm text-[var(--accent)] font-medium mb-2">Experience</p>
+        <p className="text-sm text-(--accent)] font-medium mb-2">Experience</p>
         <h2 className="text-3xl sm:text-4xl font-bold mb-12">Where I&apos;ve Worked</h2>
 
         <div className="space-y-12">
@@ -62,13 +62,13 @@ export default function Experience() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="relative pl-8 border-l border-white/10"
             >
-              <div className={`absolute left-0 top-1.5 -translate-x-1/2 w-3 h-3 rounded-full ${exp.current ? "bg-[var(--accent)]" : "bg-white/30"}`} />
+              <div className={`absolute left-0 top-1.5 -translate-x-1/2 w-3 h-3 rounded-full ${exp.current ? "bg-(--accent)]" : "bg-white/30"}`} />
 
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-3">
                 <div className="flex items-center gap-2 flex-wrap">
                   <h3 className="text-lg font-semibold text-white">{exp.role}</h3>
                   {exp.current && (
-                    <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-[var(--accent)]/10 text-[var(--accent)] border border-[var(--accent)]/20">
+                    <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-(--accent)]/10 text-(--accent)] border border-(--accent)]/20">
                       Current
                     </span>
                   )}
@@ -79,7 +79,7 @@ export default function Experience() {
                 </div>
               </div>
 
-              <p className="text-[var(--accent)] text-sm font-medium mb-3">{exp.company}</p>
+              <p className="text-(--accent)] text-sm font-medium mb-3">{exp.company}</p>
 
               <ul className="space-y-2">
                 {exp.points.map((point, i) => (

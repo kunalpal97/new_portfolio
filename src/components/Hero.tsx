@@ -52,7 +52,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center px-6 pt-20">
       <div className="max-w-3xl mx-auto text-center">
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/[0.03] mb-6">
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/3 mb-6">
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
           <span className="text-xs text-white/60">Available for opportunities</span>
         </div>
@@ -65,7 +65,7 @@ export default function Hero() {
         >
           {displayText}
           <span
-            className="inline-block w-[3px] h-6 sm:h-8 ml-1 animate-pulse align-middle transition-colors duration-500"
+            className="inline-block w-0.75 h-6 sm:h-8 ml-1 animate-pulse align-middle transition-colors duration-500"
             style={{ backgroundColor: roles[roleIndex].color }}
           />
         </h2>
@@ -75,7 +75,7 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
-          <a href="#contact" className="w-full sm:w-auto px-6 py-3 rounded-full bg-[var(--accent)] text-black font-medium hover:opacity-90 transition-opacity">
+          <a href="#contact" className="w-full sm:w-auto px-6 py-3 rounded-full bg-(--accent)] text-black font-medium hover:opacity-90 transition-opacity">
             Contact Me
           </a>
           <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-6 py-3 rounded-full border border-white/20 text-white font-medium hover:bg-white/5 transition-colors">
