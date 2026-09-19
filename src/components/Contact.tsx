@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, Send, Loader2, CheckCircle2 } from "lucide-react";
+import { motion } from "framer-motion";
+import { Mail, Send, Loader2, CheckCircle2, User, MessageSquare } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -33,7 +34,13 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-24 px-6">
-      <div className="max-w-2xl mx-auto text-center">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6 }}
+        className="max-w-2xl mx-auto text-center"
+      >
         <p className="text-sm text-[var(--accent)] font-medium mb-2">Contact</p>
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">Let&apos;s Connect</h2>
         <p className="text-white/60 mb-12">
@@ -46,31 +53,37 @@ export default function Contact() {
               <label htmlFor="name" className="block text-sm text-white/60 mb-2">
                 Name
               </label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                required
-                value={formData.name}
-                onChange={handleChange}
-                placeholder="Your name"
-                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:border-[var(--accent)] transition-colors"
-              />
+              <div className="relative">
+                <User size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-white/30" />
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  required
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Your name"
+                  className="w-full pl-11 pr-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:border-[var(--accent)] transition-colors"
+                />
+              </div>
             </div>
             <div>
               <label htmlFor="email" className="block text-sm text-white/60 mb-2">
                 Email
               </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="you@example.com"
-                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:border-[var(--accent)] transition-colors"
-              />
+              <div className="relative">
+                <Mail size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-white/30" />
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="you@example.com"
+                  className="w-full pl-11 pr-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:border-[var(--accent)] transition-colors"
+                />
+              </div>
             </div>
           </div>
 
@@ -78,16 +91,19 @@ export default function Contact() {
             <label htmlFor="message" className="block text-sm text-white/60 mb-2">
               Message
             </label>
-            <textarea
-              id="message"
-              name="message"
-              required
-              rows={5}
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="What would you like to say?"
-              className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:border-[var(--accent)] transition-colors resize-none"
-            />
+            <div className="relative">
+              <MessageSquare size={16} className="absolute left-4 top-4 text-white/30" />
+              <textarea
+                id="message"
+                name="message"
+                required
+                rows={5}
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="What would you like to say?"
+                className="w-full pl-11 pr-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:border-[var(--accent)] transition-colors resize-none"
+              />
+            </div>
           </div>
 
           <button
@@ -122,13 +138,12 @@ export default function Contact() {
           <p className="text-sm text-white/50 mb-2">Or reach me directly at</p>
           <a
             href="mailto:kunalpal460@gmail.com"
-            className="inline-flex items-center gap-2 text-[var(--accent)] hover:opacity-80 transition-opacity"
-          >
+            className="inline-flex items-center gap-2 text-(--accent) hover:opacity-80 transition-opacity">
             <Mail size={16} />
             kunalpal460@gmail.com
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
